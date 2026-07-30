@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+
+/* スペックセクション */
+
+.section-title {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-title img {
+    max-width: 100%;
+}
+
+.spec-slider {
+    padding-bottom: 40px;
+}
+
+/* slickスライダー */
+
+.js-slick01 {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.js-slick01 .slick-slide,
+.js-slick02 .slick-slide {
+    margin: 0 40px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slide-container {}
+
+.slick-slide {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* スライダー矢印 */
+
+.slick-prev,
+.slick-next{
+    font-size: 0px;
+    line-height: 0;
+    position: absolute;
+    top: 105%;
+    display: block;
+    cursor: pointer;
+    color: transparent;
+    outline: none;
+    background: transparent;
+    margin-right:20px;
+    z-index: 900;
+}
+
+.js-slick02 .slick-prev,
+.js-slick02 .slick-next{
+    top: 110%;
+}
+
+.slick-prev{
+    left: calc(85% - 120px);
+}
+
+.slick-next{
+    left: 85%;
+}
+
+.slick-prev::before,
+.slick-next::before{
+    line-height: 1;
+    opacity: 1;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    border: 3px solid #fff;
+    padding: 15px 35px;
+    margin-right: 20px;
+}
+
+.slick-prev::before{
+    content: url(../img/arrow_left_white.svg);
+}
+
+.js-slick02 .slick-prev::before,
+.js-slick02 .slick-next::before{
+    filter: brightness(0%);
+    border-color: #000;
+}
+
+.slick-next::before{
+    content: url(../img/arrow_right_white.svg);
+}
+
+.slick-list{
+    margin-bottom: 100px;
+}
+
+
+/* スライダードット */
+
+.slick-dotted.slick-slider{
+    margin-bottom: 30px;
+    
+}
+
+.slick-dots {
+    position: absolute;
+    padding-top: 40px;
+    top:95%;
+}
+
+.slick-dots li button::before{
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: #fff;
+}
+
+.slick-dots li.slick-active button:before
+{
+    opacity: 1;
+    color: #fff;
+}
+
+.slick-track{
+  margin-bottom: 20px;
+}
