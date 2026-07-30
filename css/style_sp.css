@@ -1,0 +1,729 @@
+@charset "UTF-8";
+/* CSS Document */
+/*基本設定
+---------------------------------------------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote {
+  margin: 0;
+  padding: 0
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+body {
+  width:100%;
+  min-width:300px;
+  position: relative; /*サイドバナー用*/
+  color: #151a20;
+  font-family: "Noto Serif JP", serif;
+  line-height: 1.6;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  *font-size: small;
+  *font: x-small;
+}
+body li {
+  list-style: none;
+}
+body {
+  font-size: 75%\9;
+}
+body:not(:target) {
+  font-size: 75%¥9;
+}
+img {
+  border: 0;
+  vertical-align: top;
+}
+strong {
+  font-weight: bold;
+}
+a:link, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+a:hover, a:active {
+  color: #999;
+}
+address {
+  font-style: normal;
+}
+.pc {
+  display: none;
+}
+.sp {
+  display: block;
+}
+#header_topics {
+  height: 112px;
+}
+#header_sp {
+  display: block;
+}
+#header_pc {
+  display: none;
+}
+/* 共通
+---------------------------------------------------------- */
+.wrap {
+  width: 93%;
+  margin: 0 auto;
+  text-align: center;
+}
+h3 {
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: 100;
+  letter-spacing: 10px;
+  line-height: 30px;
+  margin: 0 auto 20px;
+}
+h3 span {
+  font-size: .5em;
+  letter-spacing: 6px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 13px;
+}
+/* ヘッダー
+---------------------------------------------------------- */
+#gnav {
+  display: none;
+}
+#gnav_sp {
+  display: block;
+  text-align: center;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  opacity: .8;
+  letter-spacing: 2px;
+  top: 0;
+}
+#gnav_sp ul {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;  
+}
+#gnav_sp ul li {
+  list-style: none;
+  display: inline-block;
+  width: 23%;
+  border-right:solid 1px #999;
+}
+#gnav_sp ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 7px;
+}
+#gnav_sp ul li a:hover {
+  opacity: .4;
+}
+/* ロゴ
+---------------------------------------------------------- */
+#logo {
+  background: #151a20;
+  text-align:center;
+  padding:0;
+  width:100%;
+ }
+ #logo ul{
+  border:0;
+ }
+ #logo ul li {
+   width: 100%;
+   background: #151a20;
+   animation-name:fadeInAnime;
+   animation-duration:10s;
+   animation-fill-mode:forwards;
+   opacity:0;
+ }
+ #logo ul li img {
+  margin-top:50px ;
+  width: 100%;
+}
+ 
+ @keyframes fadeInAnime{
+   from {
+     opacity: 0;
+   }
+ 
+   to {
+     opacity: 1;
+   }
+ }
+
+ /*メインタイトル１
+---------------------------------------------------------- */
+#title1 {
+  width: 100%;
+  color: #fff;
+  background: #151a20;
+  text-align: center;
+  padding: 0 50px;
+  height:60%;
+  overflow: hidden;
+}
+#title1 img{
+  width:100%;
+  max-width:500px ;
+  object-fit: contain;
+}
+#title1 .line {
+border:none;
+height:60%;
+}
+
+/* メインタイトル２
+---------------------------------------------------------- */
+#title2 {
+  width: 100%;
+  color: #fff;
+  background: #151a20;
+  text-align: center;
+  padding: 0 50px;
+  height:60%;
+}
+#title2 img{
+  padding-top:50px;
+  max-width:500px ;
+  width:100%;
+}
+#title2 .line {
+  height:60%;
+  border:none;
+}
+
+/* メインタイトル３
+---------------------------------------------------------- */
+#title3 {
+  width: 100%;
+  color: #fff;
+  background: #fff;
+  text-align: center;
+  padding: 0 50px;
+  height:60%;
+}
+#title3 img{
+  width:100%;
+  max-width:1500px ;
+}
+#title3 .line {
+  height:60%;
+  border:none;
+}
+
+/* メインタイトル４
+---------------------------------------------------------- */
+#title4 {
+  width: 100%;
+  color: #fff;
+  background: #fff;
+  text-align: center;
+  padding: 0 50px;
+  height:70%;
+}
+#title4 img{
+  width:100%;
+  max-width:1500px ;
+}
+#title4 .line {
+  height:70%;
+  border:none;
+}
+
+
+ /* ライン
+---------------------------------------------------------- */
+
+.line {
+  width: 100%;
+  height:auto;
+  text-align: center;
+  padding:0;
+
+}
+.line ul {
+  height:auto;
+  border:0;
+}
+.line ul li{
+  width: 100%;
+  background: #151a20;
+  text-align: center;
+  padding: 0 10px;
+  float:left;
+}
+
+/* test 画像埋め込み
+---------------------------------------------------------- */
+#sample {
+  width: 100%;
+  color: #fff;
+  background: #151a20;
+  text-align: center;
+  padding-top: 50px;
+}
+#sample img {
+  width: 100%;
+}
+/* ブランドコンセプト
+---------------------------------------------------------- */
+#concept {
+  width: 100%;
+  color: #fff;
+  background: #151a20;
+  background-image: url("../img/02-1.jpg");
+  height: auto;
+  text-align: center;
+  background-size:100%;
+  background-repeat: no-repeat;
+  padding: 100px 0 10px 0 ;
+}
+#concept  .line {
+  height:auto;
+  border:0;
+}
+#concept .box_text {
+  width: 100%;
+  margin: auto ;
+  padding: 70px 0 10px 0 ;
+}
+#concept .box_text .title {
+  display:none;
+}
+#concept .box_text .title span {
+  font-size: .5em;
+  letter-spacing: 3px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 5px;
+}
+#concept .box_text p {
+  line-height: 1.2em;
+  letter-spacing: 1px;
+  font-size: .7em;
+  text-align: left;
+  text-align: center;
+}
+
+/*固定する背景*/
+.top_img {
+	width:100%;
+	box-sizing: border-box;
+	color: #FFF;
+	font-size: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	padding: 0%;
+  }
+  .parallax-bg {
+	width:100%;
+	padding:0 0 0 0 ;
+	background-image: url('/img/202203back.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+  }
+  .parallax-bg img{
+	display: block;
+  margin:0 auto;
+	width:25%;
+	height:auto;
+  }
+  .parallax-bg_title {
+	width:100%;
+  height:auto;
+	padding:0 ;
+	background-image: url("https://www.rakuten.ne.jp/gold/tsuriking/event/energy/img/pattern_02.png");
+  background-position:50% 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+  }
+  .parallax-bg_title .line{
+  border:0;
+  height: auto;
+  }
+  .parallax-bg_title img{
+  max-width: 300px;
+	display: block;
+  margin:0 auto;
+	width:100%;
+	height:auto;
+  }
+  .parallax-bg_title .line p{
+    position: absolute;
+    top:55%;
+    left:50%;
+    letter-spacing:1px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:#fff;
+    font-size: 0.5em;
+    padding:0;
+    margin:0;
+  }
+
+
+/* スペック
+---------------------------------------------------------- */
+#spec {
+  width: 100%;
+  height:100%;
+  background: #151a20;
+  padding: 0;
+  text-align: center;
+  overflow:hidden;
+}
+#spec ul {
+  height:auto;
+border:0;
+}
+#spec ul li{
+  width: 100%;
+  background: #151a20;
+  text-align: center;
+  padding: 0 10px;
+}
+.animation{
+  transition: 1.3s ease-in-out;
+  transform: translateY(30px);
+  opacity: 0;
+}
+.animation img{
+  width:100%;
+}
+.animation.on{
+  transform: translateY(0);
+  opacity: 1.0;
+}
+.animation.on img{
+  width:100%;
+}
+
+
+/* バリエーション
+---------------------------------------------------------- */
+#variation {
+  width: 100%;
+  height:auto;
+  background: #151a20;
+  padding: 0;
+  text-align: center;
+  overflow:hidden;
+}
+#variation ul {
+  height:auto;
+  border:0;
+}
+#variation ul li{
+  width: 100%;
+  background: #151a20;
+  text-align: center;
+  padding: 0;
+  float:left;
+}
+#variation ul li img{
+  width: 100%;
+}
+/* ライン
+---------------------------------------------------------- */
+
+.line {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  height:auto;
+  overflow:auto;
+}
+.line ul {
+  height:auto;
+  border:0;
+
+}
+.line ul li{
+  width: 100%;
+  background: #151a20;
+  text-align: center;
+  float:left;
+}
+.line ul li img{
+width:100%;
+}
+
+/* タブ
+---------------------------------------------------------- */
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  width:100%;
+  padding: 0 5px;
+  background-color: #151a20;
+  overflow:auto;
+  height:70%;
+}
+.tabs ul  {
+  height:80%;
+  overflow:hidden;
+  border:none;
+}
+.tabs ul li {
+  height:80%;
+  width: 100%;
+  background: #151a20;
+  text-align: center;
+  padding: 50px 0px;
+  float:left;
+  overflow:auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+  font-family: "Noto Serif JP";
+  width: calc(100%/3);
+  border-bottom: 3px solid #151a20;
+  background-color: #151a20;
+  line-height: 100px;
+  font-size: 1em;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  box-shadow:0 0 10px rgb(2, 166, 241, 0.3);
+  opacity: 0.5;
+}
+.tab_item:hover {
+  opacity: 0.9;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 5px 5px 0;
+  clear: both;
+  text-align: center;
+  overflow: hidden;
+}
+.tab_content_description{
+  width:100%;
+  height:90%;
+  margin:auto;
+  padding:50px 0 10px 0;
+  text-align: center;
+  position:relative;
+  overflow:auto;
+}
+.tab_content_description img{
+  width:100%;
+  max-width: 1500px;
+}
+.tab_content_description .box{
+  width:100%;
+  text-align: center;
+}
+.tab_content_description .box p {
+  font-family: "Noto Serif JP";
+  line-height: 1.6em;
+  letter-spacing: 3px;
+  font-size: 0.7em;
+  text-align: center;
+  color:#fff;
+  padding:10px;
+}
+.tab_content_description .box p span {
+  font-family: "Noto Serif JP",;
+  letter-spacing: 3px;
+  font-size: 1.3em;
+  border-bottom: :solid 1mm #fff;
+}
+.tab_content_description a{
+  font-family: "Noto Serif JP",sans-serif;
+  font-weight: 500;
+  border-radius: 10px;
+  line-height: 1.6em;
+  letter-spacing: 4px;
+  font-size: 1.4em;
+  color:#fff;
+	background: #424242;
+	box-shadow: 0 6px 0 rgba(46, 46, 46, 0.966), 0 12px 0 rgba(0,0,0,.2);
+	transition: color .3s, background .3s, box-shadow .3s, transform 0.3s;
+  padding:7px;
+  margin:10px;
+}
+.tab_content_description a:hover{
+	color: white;
+	background: rgb(88, 88, 88);
+	box-shadow: 0 3px 0 rgb(74, 75, 75), 0 6px 0 rgba(0,0,0,.2);
+	transform: translateY(3px);
+}
+
+
+/* アクセサリ
+---------------------------------------------------------- */
+.acce_box{
+  width:100%;
+  padding: 30px 5px;
+  background-color: #fff;
+  overflow:hidden;
+  border:none;
+  border-top: 1mm solid rgb(255, 255, 255) ;
+}
+.acce_box .line{
+  border:none;
+  overflow:hidden;
+}
+.acce_box .line ul{
+  width:100%;
+  padding: 0px;
+  background-color: #fff;
+  height:auto;
+  margin:0;
+  float:left;
+  margin:20px 0;
+}
+
+.acce_box .line ul li{
+  width:50%;
+  padding: 0 3%;
+  background-color: #fff;
+  height:auto;
+  float:left;
+}
+.acce_box .line ul img{
+  transition: opacity .3s;
+  padding:5% 0;
+}
+.acce_box .line ul li img:hover {
+}
+.acce_box .line ul li p{
+  font-family: "Noto Serif JP",sans-serif;
+  color:#151a20;
+  font-size:0.8em;
+  height:60%;
+}
+.acce_box .line ul li span{
+  color:#c20000;
+  font-size:18px;
+  margin:0 5px 0 0;
+}
+.acce_box .line ul li a{
+  font-family: "Noto Serif JP",sans-serif;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+	max-width: 300px;
+	margin:10px 0 0 0;
+	padding: 2px;
+	border: 0;
+	border-radius: 0.8em;
+	color: ghostwhite;
+	font-size: 0.8em;
+	background: #8a8a8a;
+	box-shadow: 0 6px 0 #2e2e2ef6, 0 12px 0 rgba(0,0,0,.2);
+	transition: color .3s, background .3s, box-shadow .3s, transform 0.3s;
+}
+.acce_box .line ul li a:hover {
+	color: white;
+	background: rgb(88, 88, 88);
+	box-shadow: 0 3px 0 #4a4b4b, 0 6px 0 rgba(0,0,0,.2);
+	transform: translateY(3px);
+}
+
+
+/* 商品ラインナップ
+---------------------------------------------------------- */
+#lineup {
+  margin: 0 auto;
+  padding: 60px 0 0;
+  overflow: hidden;
+}
+#lineup .wrap p {
+  font-size: 1em;
+  letter-spacing: 5px;
+}
+#lineup .wrap .box_pd {
+  width: 47%;
+  float: left;
+  margin: 0 20px 40px 0;
+}
+#lineup .wrap .box_pd:nth-child(2n) {
+  margin: 0 0 40px 0;
+}
+#lineup .wrap .box_pd .photo {
+  margin-bottom: 15px;
+}
+#lineup .wrap .box_pd .photo img {
+  width: 100%;
+}
+#lineup .wrap .box_pd .name {
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+#lineup .wrap .box_pd .price {
+  font-size: 1em;
+  letter-spacing: 2px;
+}
+#lineup .wrap .box_pd .price span {
+  font-size: .4em;
+}
+
+
+
+/* フッター
+---------------------------------------------------------- */
+footer {
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", "sans-serif";
+  padding: 15px 0 10px;
+  border-top: 1px solid #eee;
+}
+/* トップへ戻るボタン
+---------------------------------------------------------- */
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 80%;
+  border: 1px dotted #000;
+  border-radius: 50px;
+  opacity: .5;
+}
+#page-top a {
+  display: block;
+  background: #fff;
+  font-size: 1.4em;
+  color: #000;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+}
+#page-top a:hover {
+  background: #d2d2d2;
+  text-decoration: none;
+}
